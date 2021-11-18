@@ -2,11 +2,17 @@
 
 
 欧拉计划一些简单题的程序和答案。
+
 some answer for easy problem in project euler.
+
 プロジェクトオイラーのプログラムと簡単な質問への回答。
 
+
+
 我希望你能弄明白为什么是这样，而不是直接照搬答案。
+
 I hope you can understand the principle instead of being a cheater.
+
 論理を理解していただければ幸いです，答えを直接コピーする代わりに。
 
 
