@@ -10,7 +10,7 @@ I hope you can understand the principle instead of being a cheater.
 論理を理解していただければ幸いです，答えを直接コピーする代わりに。
 
 
-|Problem|c++|answer|
-|:------:|:------:|:------:|
-|[766](https://projecteuler.net/problem=766)|[c++](https://github.com/yydaily/project-euler-solution/blob/main/766/solution.cpp)|2613742|
+|Problem|c++|go|python|answer|
+|:------:|:------:|:------:|:------:|:------:|
+|[766](https://projecteuler.net/problem=766)|[c++](https://github.com/yydaily/project-euler-solution/blob/main/766/solution.cpp)|[go](https://github.com/yydaily/project-euler-solution/blob/main/766/solution.go)||2613742|
 
