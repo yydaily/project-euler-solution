@@ -16,6 +16,6 @@ I hope you can understand the principle instead of being a cheater.
 
 |Problem|c++|go|python|answer|
 |:------:|:------:|:------:|:------:|:------:|
-|[1](https://projecteuler.net/problem=1)|[c++](https://github.com/yydaily/project-euler-solution/blob/main/1/solution.cpp)|[go](https://github.com/yydaily/project-euler-solution/blob/main/1/solution.go)|[py](https://github.com/yydaily/project-euler-solution/blob/main/1/solution.py)|233168|
+|[1](https://github.com/yydaily/project-euler-solution/blob/main/1/solution.md)|[c++](https://github.com/yydaily/project-euler-solution/blob/main/1/solution.cpp)|[go](https://github.com/yydaily/project-euler-solution/blob/main/1/solution.go)|[py](https://github.com/yydaily/project-euler-solution/blob/main/1/solution.py)|233168|
 |[766](https://projecteuler.net/problem=766)|[c++](https://github.com/yydaily/project-euler-solution/blob/main/766/solution.cpp)|[go](https://github.com/yydaily/project-euler-solution/blob/main/766/solution.go)||2613742|
 
