@@ -4,9 +4,9 @@
 using namespace std;
 const int r = 5;
 const int c = 6;
-struct m {/*{{{*/
+struct m {
     char mat[r][c];
-    __int128 get_val() {/*{{{*/
+    __int128 get_val() {
         __int128 ret = 0;
         __int128 base = 1;
         for(int i = 0;i<r;i++) {
@@ -23,8 +23,8 @@ struct m {/*{{{*/
             }
         }
         return ret;
-    }/*}}}*/
-    void show() {/*{{{*/
+    }
+    void show() {
         for(int i = 0;i<r;i++) {
             for(int j = 0;j<c;j++) {
 				int x = mat[i][j];
@@ -39,8 +39,8 @@ struct m {/*{{{*/
             cout<<endl;
         }
         cout<<endl;
-    }/*}}}*/
-};/*}}}*/
+    }
+};
 map<__int128, bool> x;
 struct q {
     queue<m> que;
@@ -56,7 +56,6 @@ struct q {
     m pop() {
         auto ret = que.front();
         que.pop();
-		//ret.show();
         return ret;
     }
     bool empty() {
