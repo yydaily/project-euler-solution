@@ -1,3 +1,5 @@
+## Generating polygons
+
 A **polygon** is a flat shape consisting of straight line segments that are joined to form a closed chain or circuit. A polygon consists of at least three sides and does not self-intersect.
 
 A set S of positive numbers is said to *generate a polygon* P if:
