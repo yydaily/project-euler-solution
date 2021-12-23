@@ -1,17 +1,20 @@
 package main
+
 import "fmt"
-const mod = int(1e9+7)
+
+const mod = int(1e9 + 7)
+
 func cal_add(a, b int) int {
-	return (a+b)%mod
+	return (a + b) % mod
 }
 func mul(a, b int) int {
 	x := int64(a) * int64(b)
-	return int(x%int64(mod))
+	return int(x % int64(mod))
 }
 func qpow(a, b int) int {
 	ret := 1
 	for b > 0 {
-		if (b&1) != 0 {
+		if (b & 1) != 0 {
 			ret = mul(ret, a)
 		}
 		a = mul(a, a)
@@ -22,7 +25,9 @@ func qpow(a, b int) int {
 func cal(a, b int) int {
 	return mul(mul(a, b), qpow(cal_add(a, b), mod-2))
 }
+
 var ans = [][]int{}
+
 func add(a, x, y int) {
 	for _, i := range ans[x] {
 		for _, j := range ans[y] {
@@ -45,7 +50,7 @@ func unique(a []int) []int {
 }
 func show() {
 	a := []int{}
-	for i := 1;i<19;i++ {
+	for i := 1; i < 19; i++ {
 		for _, j := range ans[i] {
 			a = append(a, j)
 			//add(i, j, i-j)
@@ -58,8 +63,8 @@ func show() {
 func main() {
 	ans = make([][]int, 20)
 	ans[1] = append(ans[1], 1)
-	for i := 2;i<=18;i++ {
-		for j := 1;j*2<=i;j++ {
+	for i := 2; i <= 18; i++ {
+		for j := 1; j*2 <= i; j++ {
 			add(i, j, i-j)
 		}
 		ans[i] = unique(ans[i])

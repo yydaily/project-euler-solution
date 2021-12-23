@@ -5,19 +5,19 @@ import "fmt"
 func rev(a int) int {
 	ret := 0
 	for a > 0 {
-		ret = ret * 10 + a % 10
+		ret = ret*10 + a%10
 		a /= 10
 	}
 	return ret
 }
 
 func check(a int) int {
-	if a % 10 == 0 {
+	if a%10 == 0 {
 		return 0
 	}
 	a += rev(a)
 	for a > 0 {
-		if a % 2 == 0 {
+		if a%2 == 0 {
 			return 0
 		}
 		a /= 10
@@ -28,10 +28,10 @@ func check(a int) int {
 func main() {
 	upper := 1000 * 1000 * 100
 	ans := 0
-	for i := 1 ;i<=upper; i+=2 {
+	for i := 1; i <= upper; i += 2 {
 		if check(i) == 1 {
 			ans++
 		}
 	}
-	fmt.Printf("%d\n", (ans<<1))
+	fmt.Printf("%d\n", (ans << 1))
 }
