@@ -15,3 +15,5 @@ do
 	done
 	echo ''
 done
+
+python gen_readme.py
