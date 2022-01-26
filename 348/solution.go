@@ -63,4 +63,3 @@ func main() {
 	}
 	fmt.Printf("%d\n", sum)
 }
-
