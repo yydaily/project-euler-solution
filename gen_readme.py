@@ -9,7 +9,11 @@ def init_ans():
 		anss = f.readlines()
 	for a in anss:
 		a = a[:len(a)-1]
+		if len(a) == 0:
+			continue
 		sa = a.split(":")
+		if len(sa) != 2:
+			print(sa, " size is not 2")
 		ans[sa[0]] = sa[1]
 
 def handle(path):
