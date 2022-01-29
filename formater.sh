@@ -11,6 +11,8 @@ do
 			echo $filename
 		elif [[ $filename =~ py ]]; then
 			black $i/$filename
+		elif [[ $filename =~ out ]]; then
+			rm $i/$filename
 		fi
 	done
 	echo ''
