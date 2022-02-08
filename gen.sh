@@ -21,6 +21,7 @@ echo "#include<iostream>/*{{{*/
 #include<set>
 #include<math.h>
 #include<map>
+#include \"../template/bigint.cpp\"
 const int e4 = 10000;
 const int e8 = e4*e4;
 const int mod = 1e9+7;
