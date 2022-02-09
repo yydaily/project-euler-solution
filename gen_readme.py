@@ -81,6 +81,8 @@ I hope you can understand the principle instead of being a cheater.
 			continue
 		if f == ".git": # filter git
 			continue
+		if f == "template": # filter template
+			continue
 		need_handle.append(int(f))
 	for f in sorted(need_handle):
 		handle(str(f))
