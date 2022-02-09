@@ -1,6 +1,9 @@
 dir=$(ls -l . | awk '/^d/ {print $NF}')
 for i in $dir
 do
+	if [[ $i == template ]];then
+		continue
+	fi
 	echo $i
 	file=$(ls $i)
 	for filename in $file
