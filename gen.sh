@@ -23,6 +23,8 @@ echo "#include<iostream>/*{{{*/
 #include<map>
 #include \"../template/bigint.cpp\"
 #include \"../template/prime_cnt.cpp\"
+#include \"../template/china_reminder.cpp\"
+#include \"../template/euler.cpp\"
 const long long e2 = 100;
 const long long e3 = e2*10;
 const long long e4 = e3*10;
