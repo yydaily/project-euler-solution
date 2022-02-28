@@ -51,7 +51,7 @@ I hope you can understand the principle instead of being a cheater.
 |[36](https://github.com/yydaily/project-euler-solution/blob/main/36/README.md)|[c++](https://github.com/yydaily/project-euler-solution/blob/main/36/solution.cpp)|||872187|
 |[37](https://github.com/yydaily/project-euler-solution/blob/main/37/README.md)|[c++](https://github.com/yydaily/project-euler-solution/blob/main/37/solution.cpp)|||748317|
 |[38](https://github.com/yydaily/project-euler-solution/blob/main/38/README.md)|[c++](https://github.com/yydaily/project-euler-solution/blob/main/38/solution.cpp)|||932718654|
-|[39](https://github.com/yydaily/project-euler-solution/blob/main/39/README.md)|[c++](https://github.com/yydaily/project-euler-solution/blob/main/39/solution.cpp)|[go](https://github.com/yydaily/project-euler-solution/blob/main/39/solution.go)|[py](https://github.com/yydaily/project-euler-solution/blob/main/39/solution.py)|840|
+|[39](https://github.com/yydaily/project-euler-solution/blob/main/39/README.md)|[c++](https://github.com/yydaily/project-euler-solution/blob/main/39/solution.cpp)|||840|
 |[40](https://github.com/yydaily/project-euler-solution/blob/main/40/README.md)|[c++](https://github.com/yydaily/project-euler-solution/blob/main/40/solution.cpp)|||210|
 |[41](https://github.com/yydaily/project-euler-solution/blob/main/41/README.md)|[c++](https://github.com/yydaily/project-euler-solution/blob/main/41/solution.cpp)|||7652413|
 |[42](https://github.com/yydaily/project-euler-solution/blob/main/42/README.md)|[c++](https://github.com/yydaily/project-euler-solution/blob/main/42/solution.cpp)|||162|
@@ -67,6 +67,7 @@ I hope you can understand the principle instead of being a cheater.
 |[52](https://github.com/yydaily/project-euler-solution/blob/main/52/README.md)|[c++](https://github.com/yydaily/project-euler-solution/blob/main/52/solution.cpp)|||142857|
 |[53](https://github.com/yydaily/project-euler-solution/blob/main/53/README.md)|[c++](https://github.com/yydaily/project-euler-solution/blob/main/53/solution.cpp)|||4075|
 |[55](https://github.com/yydaily/project-euler-solution/blob/main/55/README.md)|[c++](https://github.com/yydaily/project-euler-solution/blob/main/55/solution.cpp)|||249|
+|[56](https://github.com/yydaily/project-euler-solution/blob/main/56/README.md)|[c++](https://github.com/yydaily/project-euler-solution/blob/main/56/solution.cpp)|||972|
 |[67](https://github.com/yydaily/project-euler-solution/blob/main/67/README.md)|[c++](https://github.com/yydaily/project-euler-solution/blob/main/67/solution.cpp)|[go](https://github.com/yydaily/project-euler-solution/blob/main/67/solution.go)|[py](https://github.com/yydaily/project-euler-solution/blob/main/67/solution.py)|7273|
 |[68](https://github.com/yydaily/project-euler-solution/blob/main/68/README.md)|[c++](https://github.com/yydaily/project-euler-solution/blob/main/68/solution.cpp)|||6531031914842725|
 |[78](https://github.com/yydaily/project-euler-solution/blob/main/78/README.md)|[c++](https://github.com/yydaily/project-euler-solution/blob/main/78/solution.cpp)|[go](https://github.com/yydaily/project-euler-solution/blob/main/78/solution.go)|[py](https://github.com/yydaily/project-euler-solution/blob/main/78/solution.py)|55374|
