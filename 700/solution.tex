@@ -1,0 +1,98 @@
+\documentclass{article}
+\usepackage{CJKutf8}
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage{ulem}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+\setlength{\parindent}{0pt}
+\section{问题}
+
+莱昂哈德·欧拉出生于$1707$年四月$15$日。\\
+
+考虑序列 $1504170715041707n \bmod 4503599627370517$。\\
+
+该序列中的某个元素被定义为欧拉币，当且仅当它严格小于之前已经定义的所有欧拉币。\\
+
+例如，序列的第一项是$1504170715041707$，这是第一枚欧拉币。序列的第二项是$3008341430083414$，因为它大于$1504170715041707$，因此它不是欧拉币。然后，序列的第三项是$8912517754604$，比第一项要小，因此是一枚新的欧拉币。\\
+
+因此，前$2$枚欧拉币之和为$1513083232796311$。\\
+
+求所有欧拉币之和。
+
+\section{解法}
+
+\subsection{暴力}
+
+一个最直观的想法是，我们可以暴力枚举每个 $n$ 来判断是否比之前的欧拉币要小，以此来判断当前是否是一个欧拉币。代码大概如下：
+
+\begin{algorithm}
+\caption{Calculate all euler coin}
+\begin{algorithmic}
+\STATE $n \gets 1$
+\STATE $step \gets 1504170715041707$
+\STATE $mod \gets 4503599627370517$
+\STATE $last\_euler\_coin \gets mod$
+\STATE $answer \gets 0$
+\WHILE {$n \neq mod$}
+	\IF {$n*step\%mod < last\_euler\_coin$}
+		\STATE $last\_euler\_coin \gets n*step\%mod$
+		\STATE $answer += last\_euler\_coin$
+	\ENDIF
+	\STATE $n \gets n+1$
+\ENDWHILE
+\end{algorithmic}
+\end{algorithm}
+
+但是很遗憾，这个过程的复杂度是 $O(mod)$ 的，也即：即使 $1$s 能运算 $1e8$ 次，也需要 $521$ 天。这远远超过了欧拉计划的 $1$ 分钟原则。下面是我自己的暴力代码的速度：\\
+\thispagestyle{empty}
+\begin{tabular}{|c|c|c|}
+\hline  
+$n$&euler\_coin&时间花费\\
+\hline 
+1&1504170715041707&1.3e-05\\
+\hline
+3&8912517754604&3.6e-05\\
+\hline
+506&2044785486369&4.5e-05\\
+\hline
+$\dots$&$\dots$&$\dots$\\
+\hline
+3732049906&10487287&2.08483\\
+\hline
+4015876927&10078122&2.23973\\
+\hline
+$\dots$&$\dots$&$\dots$\\
+\hline
+10260071389&1076492&5.668\\
+\hline
+10543898410&667327&5.82323\\
+\hline
+10827725431&258162&5.9797\\
+\hline
+21939277883&107159&12.0777\\
+\hline
+54990108218&63315&30.237\\
+\hline
+\end{tabular}\\\\
+
+再之后的一个 euler-coin 的计算已经超过 $60$ s了。
+
+\subsection{推导}
+
+通过简单计算，我们能够得到 $gcd(1504170715041707, 4503599627370517) = 1$。所以一定有 $1$ 是 euler-coin （因为 $1504170715041707n \equiv 1 (\bmod 4503599627370517)$ 是有解的）。 \\
+
+那么一个有趣且自然的想法是，我们可以枚举每个值，来判断这个值是否是euler-coin，怎么判断是不是 euler-coin 呢？\\
+
+首先，对于 euler-coin = $1$ 来说，我们需要找到对应的 $n_1$，不难发现 $n_1 = \frac{1}{1504170715041707} \bmod 4503599627370517 = 3451657199285664$\\
+
+然后，对于剩下的 $x$ ，怎么判断 $x$ 是否是 euler-coin 呢？我们只需要计算 $n_x = \frac{x}{1504170715041707} \bmod 4503599627370517$，然后和上一个 euler-coin 对比下标，就能知道这个是不是 euler-coin 了。\\
+
+然而，这个想法只能处理比较小的 $x$。\\
+
+所以，我们将这个想法和暴力想法结合起来，对于比较大的 $x$ 和 较小的$n$，我们暴力从小到大枚举 $n$ 来找到 euler-coin，反之，我们从小到大枚举 $x$ 来判断每个 $x$ 是不是 euler-coin。
+
+\end{CJK}
+\end{document}

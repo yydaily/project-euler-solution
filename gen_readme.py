@@ -25,6 +25,7 @@ def handle(path):
 	cpp = ""
 	go = ""
 	py = ""
+	pdf = ""
 	for f in all_file_in_dir:
 		if f[len(f)-3:] == ".md":
 			read_me = f
@@ -34,6 +35,8 @@ def handle(path):
 			go = f
 		elif f[len(f)-3:] == ".py":
 			py = f
+		elif f[len(f)-4:] == ".pdf":
+			pdf = f
 	if len(read_me) == 0:
 		print(path)
 		return 1/0
@@ -46,6 +49,9 @@ def handle(path):
 	content += "|"
 	if len(py) > 0:
 		content += "[py](https://github.com/yydaily/project-euler-solution/blob/main/"+path+ "/" + py + ")"
+	content += "|"
+	if len(pdf) > 0:
+		content += "[pdf](https://github.com/yydaily/project-euler-solution/blob/main/" + path + "/" + pdf + ")"
 	content += "|"
 	content += ans[path]
 	content += "|"
@@ -70,8 +76,8 @@ I hope you can understand the principle instead of being a cheater.
 プロジェクトオイラーのプログラムと簡単な質問への回答。
 論理を理解していただければ幸いです，答えを直接コピーする代わりに。
 
-|Problem|c++|go|python|answer|
-|:------:|:------:|:------:|:------:|:------:|
+|Problem|c++|go|python|pdf|answer|
+|:------:|:------:|:------:|:------:|:------:|:------:|
 ''')
 
 	all_file_and_dir = os.listdir(".")

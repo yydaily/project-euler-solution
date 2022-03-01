@@ -22,30 +22,37 @@ echo "#include<iostream>/*{{{*/
 #include<math.h>
 #include<map>
 #include \"../template/bigint.cpp\"
-const int e4 = 10000;
-const int e8 = e4*e4;
-const int mod = 1e9+7;
+#include \"../template/prime_cnt.cpp\"
+#include \"../template/china_reminder.cpp\"
+#include \"../template/euler.cpp\"
+const long long e2 = 100;
+const long long e3 = e2*10;
+const long long e4 = e3*10;
+const long long e5 = e4*10;
+const long long e6 = e4*e2;
+const long long e7 = e6*10;
+const long long e8 = e7*10;
+const long long mod = 1e9+7;
 using namespace std;/*}}}*/
 
 /*add{{{*/
-template <typename T>
-T base_add(T a, T b) {
+long long base_add(long long a, long long b) {
 	a %= mod;
 	b %= mod;
 	return (a+b)%mod;
 }
-template <typename T>
-T add(const T &t) { return t; }
-template <typename T, typename ... Args>
-T add(const T &t, const Args&... args) { return base_add(t, add(args...)); }
+long long add(initializer_list<long long> args) {
+	long long ret = 0;
+	for(auto i : args) ret = base_add(ret, i);
+	return ret;
+}
 /*}}}*/
 
 /*{{{mul*/
-template <typename T>
-T base_mul(T a, T b) {
+long long base_mul(long long a, long long b) {
 	a%=mod;
 	b%=mod;
-	T ret(0);
+	long long ret = 0;
 	while(b) {
 		if(b&1) ret = (ret + a) % mod;
 		b>>=1;
@@ -53,24 +60,22 @@ T base_mul(T a, T b) {
 	}
 	return ret;
 }
-template <typename T>
-T mul(const T &t) { return t; }
-template <typename T, typename ... Args>
-T mul(const T &t, const Args&... args) { return base_mul(t, mul(args...)); }
-/*}}}*/
+long long mul(initializer_list<long long> args) {
+	long long ret = 1;
+	for(auto i : args) ret = base_mul(ret, i);
+	return ret;
+}/*}}}*/
 
 /*{{{qpow*/
-template <typename T>
-T qpow(T a, T b) {
-	T ret(1);
+long long qpow(long long a, long long b) {
+	long long ret = 1;
 	while(b) {
-		if(b&1) ret = mul(ret, a);
-		a = mul(a, a);
+		if(b&1) ret = mul({ret, a});
+		a = mul({a, a});
 		b>>=1;
 	}
 	return ret;
-}
-/*}}}*/
+} /*}}}*/
 int main() {
 	return 0;
 }" > solution.cpp
@@ -80,14 +85,74 @@ touch solution.go
 echo "package main /*{{{*/
 
 import (
+	\"reflect\"
 	\"fmt\"
 )
 
 const (
 	e4 = int64(10000)
+	e5 = int64(100000)
+	e6 = int64(1000000)
+	e7 = int64(10000000)
 	e8 = e4*e4
-	mod = 1e9+7
-) /*}}}*/
+	mod = int64(1e9+7)
+) 
+
+func add(list ...interface{}) int64 {/*{{{*/
+	if len(list) == 0 {
+		return 0
+	}
+	ret := int64(0)
+	for _, i := range list {
+		buf := int64(0)
+		switch reflect.TypeOf(i).String(){
+			case \"int\":
+				buf = int64(i.(int))
+			case \"int64\":
+				buf = i.(int64)
+		}
+		ret = (ret + buf)%mod
+	}
+	return ret
+}/*}}}*/
+func mul(list ...interface{}) int64 {/*{{{*/
+	if len(list) == 0 {
+		return 0
+	}
+	ret := int64(1)
+	for _, i := range list {
+		buf := int64(0)
+		switch reflect.TypeOf(i).String() {
+			case \"int\":
+				buf = int64(i.(int))
+			case \"int64\":
+				buf = i.(int64)
+		}
+		buf %= mod
+		base := ret
+		ret = 0
+		for buf > 0 {
+			if (buf&1) == 1 {
+				ret = add(ret, base)
+			}
+			base = add(base, base)
+			buf>>=1
+		}
+	}
+	return ret
+}/*}}}*/
+func qpow(a, b int64) int64 {/*{{{*/
+	ret := int64(1)
+	for b > 0 {
+		if (b&1) == 1 {
+			ret = mul(ret, a)
+		}
+		a = mul(a, a)
+		b>>=1
+	}
+	return ret
+}/*}}}*/
+/*}}}*/
 
 func main() {
 	fmt.Printf(\"1\")
