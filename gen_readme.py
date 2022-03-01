@@ -76,8 +76,8 @@ I hope you can understand the principle instead of being a cheater.
 プロジェクトオイラーのプログラムと簡単な質問への回答。
 論理を理解していただければ幸いです，答えを直接コピーする代わりに。
 
-|Problem|c++|go|python|answer|
-|:------:|:------:|:------:|:------:|:------:|
+|Problem|c++|go|python|pdf|answer|
+|:------:|:------:|:------:|:------:|:------:|:------:|
 ''')
 
 	all_file_and_dir = os.listdir(".")

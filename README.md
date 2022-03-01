@@ -11,8 +11,8 @@ I hope you can understand the principle instead of being a cheater.
 プロジェクトオイラーのプログラムと簡単な質問への回答。
 論理を理解していただければ幸いです，答えを直接コピーする代わりに。
 
-|Problem|c++|go|python|answer|
-|:------:|:------:|:------:|:------:|:------:|
+|Problem|c++|go|python|pdf|answer|
+|:------:|:------:|:------:|:------:|:------:|:------:|
 |[1](https://github.com/yydaily/project-euler-solution/blob/main/1/README.md)|[c++](https://github.com/yydaily/project-euler-solution/blob/main/1/solution.cpp)|[go](https://github.com/yydaily/project-euler-solution/blob/main/1/solution.go)|[py](https://github.com/yydaily/project-euler-solution/blob/main/1/solution.py)||233168|
 |[2](https://github.com/yydaily/project-euler-solution/blob/main/2/README.md)|[c++](https://github.com/yydaily/project-euler-solution/blob/main/2/solution.cpp)|[go](https://github.com/yydaily/project-euler-solution/blob/main/2/solution.go)|[py](https://github.com/yydaily/project-euler-solution/blob/main/2/solution.py)||4613732|
 |[3](https://github.com/yydaily/project-euler-solution/blob/main/3/README.md)|[c++](https://github.com/yydaily/project-euler-solution/blob/main/3/solution.cpp)|[go](https://github.com/yydaily/project-euler-solution/blob/main/3/solution.go)|[py](https://github.com/yydaily/project-euler-solution/blob/main/3/solution.py)||6857|
