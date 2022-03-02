@@ -14,6 +14,9 @@ do
 			echo $filename
 		elif [[ $filename =~ py ]]; then
 			black $i/$filename
+		elif [[ $filename =~ cpp ]]; then
+			clang-format $i/$filename > $i/out
+			mv $i/out $i/$filename
 		elif [[ $filename =~ out ]]; then
 			rm $i/$filename
 		fi

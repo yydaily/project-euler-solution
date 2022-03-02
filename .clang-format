@@ -1,0 +1,8 @@
+Language:	Cpp
+AlignConsecutiveAssignments:	true
+ColumnLimit:	200
+ContinuationIndentWidth:	4
+IndentWidth:	4
+Standard:	Cpp11
+TabWidth:	8
+UseTab:	Never
