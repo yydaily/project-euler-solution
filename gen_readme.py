@@ -40,18 +40,18 @@ def handle(path):
 	if len(read_me) == 0:
 		print(path)
 		return 1/0
-	content = "|[" + str(path) + "](https://github.com/yydaily/project-euler-solution/blob/main/" + path + "/" + read_me + ")|"
+	content = "|[" + str(path) + "](https://github.com/yydaily/project-euler-solution/tree/master/code/" + path + "/" + read_me + ")|"
 	if len(cpp) > 0:
-		content += "[c++](https://github.com/yydaily/project-euler-solution/blob/main/"+path+ "/" + cpp + ")"
+		content += "[c++](https://github.com/yydaily/project-euler-solution/tree/master/code/"+path+ "/" + cpp + ")"
 	content += "|"
 	if len(go) > 0:
-		content += "[go](https://github.com/yydaily/project-euler-solution/blob/main/"+path+ "/" + go + ")"
+		content += "[go](https://github.com/yydaily/project-euler-solution/tree/master/code/"+path+ "/" + go + ")"
 	content += "|"
 	if len(py) > 0:
-		content += "[py](https://github.com/yydaily/project-euler-solution/blob/main/"+path+ "/" + py + ")"
+		content += "[py](https://github.com/yydaily/project-euler-solution/tree/master/code/"+path+ "/" + py + ")"
 	content += "|"
 	if len(pdf) > 0:
-		content += "[pdf](https://github.com/yydaily/project-euler-solution/blob/main/" + path + "/" + pdf + ")"
+		content += "[pdf](https://github.com/yydaily/project-euler-solution/tree/master/code/" + path + "/" + pdf + ")"
 	content += "|"
 	content += ans[path]
 	content += "|"
