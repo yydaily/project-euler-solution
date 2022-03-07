@@ -20,7 +20,7 @@ def handle(path):
 	if path not in ans:
 		print(path, " has no ans")
 		return 1/0
-	all_file_in_dir = os.listdir("./" + path)
+	all_file_in_dir = os.listdir("./code/" + path)
 	read_me = ""
 	cpp = ""
 	go = ""
@@ -80,7 +80,7 @@ I hope you can understand the principle instead of being a cheater.
 |:------:|:------:|:------:|:------:|:------:|:------:|
 ''')
 
-	all_file_and_dir = os.listdir(".")
+	all_file_and_dir = os.listdir("./code")
 	need_handle = []
 	for f in all_file_and_dir:
 		if os.path.isfile(f): # filter file

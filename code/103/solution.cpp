@@ -55,50 +55,61 @@ template <typename T> T qpow(T a, T b) {
 /*}}}*/
 
 const int len = 7;
-int num[len]  = {0};
-map<int, int> m;
-bool check(int len) { /*{{{*/
-    m.clear();
+vector<int> num;
+map<vector<int>, int> checker;
+bool check() { /*{{{*/
+    if (checker[num] == 1)
+        return true;
+    if (checker[num] == -1)
+        return false;
+    map<int, int> m;
     vector<int> val;
-    for (int i = 1; i < (1 << len); i++) {
+    for (int i = 1; i < (1 << num.size()); i++) {
         int sum = 0;
         int cnt = 0;
-        for (int j = 0; j < len; j++) {
+        for (int j = 0; j < num.size(); j++) {
             if (i & (1 << j)) {
                 sum += num[j];
                 cnt++;
             }
         }
-        if (m[sum])
+        if (m[sum]) {
+            checker[num] = -1;
             return false;
+        }
         val.push_back(sum);
         m[sum] = cnt;
     }
     sort(val.begin(), val.end());
-    for (int i = 1; i < val.size(); i++) {
-        if (m[val[i]] < m[val[i - 1]])
+    for (int i = 1; i < val.size(); i++)
+        if (m[val[i]] < m[val[i - 1]]) {
+            checker[num] = -1;
             return false;
-    }
+        }
+    checker[num] = 1;
     return true;
 } /*}}}*/
 void dfs(int l, int remain, int minm) {
     int maxm = remain / l;
     if (l == 1) {
-        num[len - 1] = remain;
-        if (check(len)) {
+        num.push_back(remain);
+        if (check()) {
             for (int i = 0; i < len; i++)
                 cout << num[i];
             cout << endl;
             exit(0);
         }
+        num.pop_back();
         return;
     }
-    for (int i = minm; i <= maxm; i++) {
-        num[len - l] = i;
-        if (!check(len - l + 1)) {
+    for (int i = maxm; i >= minm; i--) {
+        num.push_back(i);
+        if (!check()) {
+            num.pop_back();
             continue;
         }
         dfs(l - 1, remain - i, i);
+        num.pop_back();
     }
 }
 int main() {

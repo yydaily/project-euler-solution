@@ -3,6 +3,7 @@
 using namespace std;
 int ans[100];
 int main() {
+    freopen("./in", "r", stdin);
     string a;
     while (cin >> a) {
         reverse(a.begin(), a.end());

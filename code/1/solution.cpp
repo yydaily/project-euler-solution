@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 int cal(int a, int upper = 999) {
     int b = upper / a;
