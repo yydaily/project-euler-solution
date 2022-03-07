@@ -85,9 +85,9 @@ I hope you can understand the principle instead of being a cheater.
 	for f in all_file_and_dir:
 		if os.path.isfile(f): # filter file
 			continue
-		if f == ".git": # filter git
-			continue
 		if f == "template": # filter template
+			continue
+		if f == "gen.sh": # filter gen.sh
 			continue
 		need_handle.append(int(f))
 	for f in sorted(need_handle):
