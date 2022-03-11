@@ -80,6 +80,7 @@ I hope you can understand the principle instead of being a cheater.
 |[68](https://github.com/yydaily/project-euler-solution/tree/master/code/68/README.md)|[c++](https://github.com/yydaily/project-euler-solution/tree/master/code/68/solution.cpp)||||6531031914842725|
 |[69](https://github.com/yydaily/project-euler-solution/tree/master/code/69/README.md)|[c++](https://github.com/yydaily/project-euler-solution/tree/master/code/69/solution.cpp)||||510510|
 |[71](https://github.com/yydaily/project-euler-solution/tree/master/code/71/README.md)|[c++](https://github.com/yydaily/project-euler-solution/tree/master/code/71/solution.cpp)||||428570|
+|[72](https://github.com/yydaily/project-euler-solution/tree/master/code/72/README.md)|[c++](https://github.com/yydaily/project-euler-solution/tree/master/code/72/solution.cpp)||||303963552391|
 |[73](https://github.com/yydaily/project-euler-solution/tree/master/code/73/README.md)|[c++](https://github.com/yydaily/project-euler-solution/tree/master/code/73/solution.cpp)||||7295372|
 |[74](https://github.com/yydaily/project-euler-solution/tree/master/code/74/README.md)|[c++](https://github.com/yydaily/project-euler-solution/tree/master/code/74/solution.cpp)||||402|
 |[76](https://github.com/yydaily/project-euler-solution/tree/master/code/76/README.md)|[c++](https://github.com/yydaily/project-euler-solution/tree/master/code/76/solution.cpp)||||190569291|
