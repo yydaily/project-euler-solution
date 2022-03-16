@@ -17,6 +17,8 @@ do
 			mv code/$i/out code/$i/$filename
 		elif [[ $filename =~ out ]]; then
 			rm code/$i/$filename
+		elif [[ $filename =~ swp ]]; then
+			rm code/$i/$filename
 		fi
 	done
 done
