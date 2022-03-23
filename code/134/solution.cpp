@@ -78,7 +78,6 @@ long long cal(long long p1, long long p2) {
 
 int main() {
     Prime::init(e6 + 4);
-    cout << cal(19, 23) << endl;
     long long ans = 0;
     for (int i = 3; i < Prime::prime.size(); i++) {
         auto v = cal(Prime::prime[i - 1], Prime::prime[i]);
