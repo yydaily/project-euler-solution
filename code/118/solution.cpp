@@ -67,22 +67,29 @@ long long qpow(long long a, long long b) {
     return ret;
 } /*}}}*/
 
-long long cal(long long p1, long long p2) {
-    long long base = 1;
-    while (p1 % base != p1)
-        base *= 10;
-    for (long long i = base + p1;; i += base)
-        if (i % p2 == 0)
-            return i;
-}
-
-int main() {
-    Prime::init(e6 + 4);
-    long long ans = 0;
-    for (int i = 3; i < Prime::prime.size(); i++) {
-        auto v = cal(Prime::prime[i - 1], Prime::prime[i]);
-        ans += v;
+int num[9] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+map<set<int>, bool> m;
+void dfs(int ind, set<int> v) {
+    if (ind == 9) {
+        m[v] = true;
+        return;
     }
-    cout << ans << endl;
+    int now = 0;
+    for (int i = ind; i < 9; i++) {
+        now = now * 10 + num[i];
+        if (Prime::is_prime(now)) {
+            auto x = v;
+            x.insert(now);
+            dfs(i + 1, x);
+        }
+    }
+}
+int main() {
+    Prime::init(e5);
+    set<int> x;
+    do {
+        dfs(0, x);
+    } while (next_permutation(num, num + 9));
+    cout << m.size() << endl;
     return 0;
 }
