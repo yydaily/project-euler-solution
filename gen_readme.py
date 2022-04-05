@@ -3,7 +3,6 @@
 import os
 
 ans = {}
-cnt_prob = 0
 cnt_cpp = 0
 cnt_py = 0
 cnt_go = 0
@@ -24,7 +23,7 @@ def init_ans():
 
 
 def handle(path):
-    global cnt_prob, cnt_cpp, cnt_py, cnt_go, cnt_pdf
+    global cnt_cpp, cnt_py, cnt_go, cnt_pdf
     if path not in ans:
         print(path, " has no ans")
         return 1 / 0
@@ -36,7 +35,6 @@ def handle(path):
     pdf = ""
     for f in all_file_in_dir:
         if f[len(f) - 3 :] == ".md":
-            cnt_prob += 1
             read_me = f
         elif f[len(f) - 4 :] == ".cpp":
             cnt_cpp += 1
@@ -105,12 +103,11 @@ def handle(path):
         f.write(content + "\n")
 
 
-if __name__ == "__main__":
-    init_ans()
+def write_prefix(problem_cnt):
     with open("./README.md", "w") as f:
         f.write(
             """
-# Project Euler solutions
+# Project Euler solutions ({problem_cnt} solutions)
 
 
 欧拉计划一些简单题的程序和答案。
@@ -124,9 +121,14 @@ I hope you can understand the principle instead of being a cheater.
 
 |Problem|c++|go|python|pdf|answer|
 |:------:|:------:|:------:|:------:|:------:|:------:|
-"""
+""".format(
+                problem_cnt=problem_cnt
+            )
         )
 
+
+if __name__ == "__main__":
+    init_ans()
     all_file_and_dir = os.listdir("./code")
     need_handle = []
     for f in all_file_and_dir:
@@ -137,6 +139,8 @@ I hope you can understand the principle instead of being a cheater.
         if f == "gen.sh":  # filter gen.sh
             continue
         need_handle.append(int(f))
+    cnt_prob = len(need_handle)
+    write_prefix(cnt_prob)
     for f in sorted(need_handle):
         handle(str(f))
     print("Problem cnt=" + str(cnt_prob))

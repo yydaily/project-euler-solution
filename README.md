@@ -1,5 +1,5 @@
 
-# Project Euler solutions
+# Project Euler solutions (246 solutions)
 
 
 欧拉计划一些简单题的程序和答案。
