@@ -1,6 +1,7 @@
 #include "../template/bigint.cpp"
 #include "../template/china_reminder.cpp"
 #include "../template/euler.cpp"
+#include "../template/fibonacci.cpp"
 #include "../template/pell.cpp"
 #include "../template/prime.cpp"
 #include "../template/prime_cnt.cpp"
@@ -20,19 +21,22 @@ const long long e9 = e8 * 10;
 long long _mod     = e9 + 7;
 using namespace std; /*}}}*/
 
-long double cal(int a, int b) { return b * log10(a) + a * log10(b); }
-long double x     = 800800;
-long double upper = x * log10(x);
+const long long mod      = 1234567891011LL;
+const long long need_cnt = 100000;
+const long long lower    = 1e14; // 1e14;
 int main() {
-    Prime::init(5e7);
+    Fibonacci::init(mod);
+    int cnt       = 0;
     long long ans = 0;
-    cout << upper - cal(Prime::prime[0], Prime::prime[Prime::prime.size() - 1]) << endl; // < 0
-    for (int i = 0; i < Prime::prime.size(); i++) {
-        for (int j = i + 1; j < Prime::prime.size(); j++) {
-            if (cal(Prime::prime[i], Prime::prime[j]) > upper)
-                break;
-            ans++;
+    for (long long i = lower;; i++) {
+        if (Prime::miller_rabin(i)) {
+            cnt++;
+            cout << cnt / 1000 << endl;
+            ans += Fibonacci::fib(i);
+            ans %= mod;
         }
+        if (cnt == need_cnt)
+            break;
     }
     cout << ans << endl;
     return 0;
