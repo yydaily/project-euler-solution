@@ -2,3 +2,4 @@
 *.out
 output
 unsolved
+*/.vscode/*
