@@ -1,5 +1,5 @@
 
-# Project Euler solutions (310 solutions)
+# Project Euler solutions (311 solutions)
 
 
 欧拉计划一些简单题的程序和答案。
@@ -261,6 +261,7 @@ I hope you can understand the principle instead of being a cheater.
 |[500](https://github.com/yydaily/project-euler-solution/tree/master/code/500/README.md)|[c++](https://github.com/yydaily/project-euler-solution/tree/master/code/500/solution.cpp)|||[pdf](https://github.com/yydaily/project-euler-solution/tree/master/code/500/solution.pdf)|35407281|
 |[501](https://github.com/yydaily/project-euler-solution/tree/master/code/501/README.md)|[c++](https://github.com/yydaily/project-euler-solution/tree/master/code/501/solution.cpp)||||197912312715|
 |[504](https://github.com/yydaily/project-euler-solution/tree/master/code/504/README.md)|[c++](https://github.com/yydaily/project-euler-solution/tree/master/code/504/solution.cpp)||||694687|
+|[506](https://github.com/yydaily/project-euler-solution/tree/master/code/506/README.md)|[c++](https://github.com/yydaily/project-euler-solution/tree/master/code/506/solution.cpp)||||18934502|
 |[516](https://github.com/yydaily/project-euler-solution/tree/master/code/516/README.md)|[c++](https://github.com/yydaily/project-euler-solution/tree/master/code/516/solution.cpp)||||939087315|
 |[517](https://github.com/yydaily/project-euler-solution/tree/master/code/517/README.md)|[c++](https://github.com/yydaily/project-euler-solution/tree/master/code/517/solution.cpp)|[go](https://github.com/yydaily/project-euler-solution/tree/master/code/517/solution.go)|[py](https://github.com/yydaily/project-euler-solution/tree/master/code/517/solution.py)||581468882|
 |[531](https://github.com/yydaily/project-euler-solution/tree/master/code/531/README.md)|[c++](https://github.com/yydaily/project-euler-solution/tree/master/code/531/solution.cpp)||||4515432351156203105|
