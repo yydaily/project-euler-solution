@@ -1,5 +1,5 @@
 
-# Project Euler solutions (331 solutions)
+# Project Euler solutions (332 solutions)
 
 
 欧拉计划一些简单题的程序和答案。
@@ -235,6 +235,7 @@ I hope you can understand the principle instead of being a cheater.
 |[326](https://github.com/yydaily/project-euler-solution/tree/master/code/326/README.md)|||[py](https://github.com/yydaily/project-euler-solution/tree/master/code/326/solution.py)||1966666166408794329|
 |[327](https://github.com/yydaily/project-euler-solution/tree/master/code/327/solution.md)|[c++](https://github.com/yydaily/project-euler-solution/tree/master/code/327/solution.cpp)|[go](https://github.com/yydaily/project-euler-solution/tree/master/code/327/solution.go)|[py](https://github.com/yydaily/project-euler-solution/tree/master/code/327/solution.py)||34315549139516|
 |[329](https://github.com/yydaily/project-euler-solution/tree/master/code/329/README.md)|[c++](https://github.com/yydaily/project-euler-solution/tree/master/code/329/solution.cpp)||[py](https://github.com/yydaily/project-euler-solution/tree/master/code/329/solution.py)||199740353/29386561536000|
+|[332](https://github.com/yydaily/project-euler-solution/tree/master/code/332/README.md)|[c++](https://github.com/yydaily/project-euler-solution/tree/master/code/332/solution.cpp)||||2717.751525|
 |[333](https://github.com/yydaily/project-euler-solution/tree/master/code/333/README.md)|[c++](https://github.com/yydaily/project-euler-solution/tree/master/code/333/solution.cpp)|[go](https://github.com/yydaily/project-euler-solution/tree/master/code/333/solution.go)|||3053105|
 |[336](https://github.com/yydaily/project-euler-solution/tree/master/code/336/README.md)|[c++](https://github.com/yydaily/project-euler-solution/tree/master/code/336/solution.cpp)||||CAGBIHEFJDK|
 |[340](https://github.com/yydaily/project-euler-solution/tree/master/code/340/README.md)||[go](https://github.com/yydaily/project-euler-solution/tree/master/code/340/solution.go)|[py](https://github.com/yydaily/project-euler-solution/tree/master/code/340/solution.py)||291504964|
