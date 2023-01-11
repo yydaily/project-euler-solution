@@ -1,5 +1,5 @@
 
-# Project Euler solutions (332 solutions)
+# Project Euler solutions (333 solutions)
 
 
 欧拉计划一些简单题的程序和答案。
@@ -228,6 +228,7 @@ I hope you can understand the principle instead of being a cheater.
 |[301](https://github.com/yydaily/project-euler-solution/tree/master/code/301/README.md)|[c++](https://github.com/yydaily/project-euler-solution/tree/master/code/301/solution.cpp)||||2178309|
 |[303](https://github.com/yydaily/project-euler-solution/tree/master/code/303/README.md)|[c++](https://github.com/yydaily/project-euler-solution/tree/master/code/303/solution.cpp)|[go](https://github.com/yydaily/project-euler-solution/tree/master/code/303/solution.go)|[py](https://github.com/yydaily/project-euler-solution/tree/master/code/303/solution.py)||1111981904675169|
 |[304](https://github.com/yydaily/project-euler-solution/tree/master/code/304/README.md)|[c++](https://github.com/yydaily/project-euler-solution/tree/master/code/304/solution.cpp)||||283988410192|
+|[306](https://github.com/yydaily/project-euler-solution/tree/master/code/306/README.md)|[c++](https://github.com/yydaily/project-euler-solution/tree/master/code/306/solution.cpp)|[go](https://github.com/yydaily/project-euler-solution/tree/master/code/306/solution.go)|[py](https://github.com/yydaily/project-euler-solution/tree/master/code/306/solution.py)||852938|
 |[307](https://github.com/yydaily/project-euler-solution/tree/master/code/307/README.md)|||[py](https://github.com/yydaily/project-euler-solution/tree/master/code/307/solution.py)||0.7311720251|
 |[310](https://github.com/yydaily/project-euler-solution/tree/master/code/310/README.md)|[c++](https://github.com/yydaily/project-euler-solution/tree/master/code/310/solution.cpp)|[go](https://github.com/yydaily/project-euler-solution/tree/master/code/310/solution.go)|[py](https://github.com/yydaily/project-euler-solution/tree/master/code/310/solution.py)||2586528661783|
 |[315](https://github.com/yydaily/project-euler-solution/tree/master/code/315/README.md)|[c++](https://github.com/yydaily/project-euler-solution/tree/master/code/315/solution.cpp)||||13625242|
