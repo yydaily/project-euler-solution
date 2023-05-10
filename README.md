@@ -1,5 +1,5 @@
 
-# Project Euler solutions (360 solutions)
+# Project Euler solutions (361 solutions)
 
 
 欧拉计划一些简单题的程序和答案。
@@ -329,6 +329,7 @@ I hope you can understand the principle instead of being a cheater.
 |[688](https://github.com/yydaily/project-euler-solution/tree/master/code/688/README.md)|[c++](https://github.com/yydaily/project-euler-solution/tree/master/code/688/solution.cpp)|[go](https://github.com/yydaily/project-euler-solution/tree/master/code/688/solution.go)|[py](https://github.com/yydaily/project-euler-solution/tree/master/code/688/solution.py)||110941813|
 |[692](https://github.com/yydaily/project-euler-solution/tree/master/code/692/README.md)|[c++](https://github.com/yydaily/project-euler-solution/tree/master/code/692/solution.cpp)||||842043391019219959|
 |[694](https://github.com/yydaily/project-euler-solution/tree/master/code/694/README.md)|[c++](https://github.com/yydaily/project-euler-solution/tree/master/code/694/solution.cpp)|[go](https://github.com/yydaily/project-euler-solution/tree/master/code/694/solution.go)|[py](https://github.com/yydaily/project-euler-solution/tree/master/code/694/solution.py)||1339784153569958487|
+|[698](https://github.com/yydaily/project-euler-solution/tree/master/code/698/README.md)|[c++](https://github.com/yydaily/project-euler-solution/tree/master/code/698/solution.cpp)|[go](https://github.com/yydaily/project-euler-solution/tree/master/code/698/solution.go)|[py](https://github.com/yydaily/project-euler-solution/tree/master/code/698/solution.py)||57808202|
 |[700](https://github.com/yydaily/project-euler-solution/tree/master/code/700/README.md)|[c++](https://github.com/yydaily/project-euler-solution/tree/master/code/700/solution.cpp)|||[pdf](https://github.com/yydaily/project-euler-solution/tree/master/code/700/solution.pdf)|1517926517777556|
 |[704](https://github.com/yydaily/project-euler-solution/tree/master/code/704/README.md)|[c++](https://github.com/yydaily/project-euler-solution/tree/master/code/704/solution.cpp)||||501985601490518144|
 |[706](https://github.com/yydaily/project-euler-solution/tree/master/code/706/README.md)|[c++](https://github.com/yydaily/project-euler-solution/tree/master/code/706/solution.cpp)|[go](https://github.com/yydaily/project-euler-solution/tree/master/code/706/solution.go)|||884837055|
