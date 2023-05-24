@@ -75,19 +75,19 @@ bool isPlace(int count) { /*{{{*/
     int row = count / 9;
     int col = count % 9;
     int j;
-    //同一行
+    // 同一行
     for (j = 0; j < 9; ++j) {
         if (num[row][j] == num[row][col] && j != col) {
             return false;
         }
     }
-    //同一列
+    // 同一列
     for (j = 0; j < 9; ++j) {
         if (num[j][col] == num[row][col] && j != row) {
             return false;
         }
     }
-    //同一小格
+    // 同一小格
     int tempRow = row / 3 * 3;
     int tempCol = col / 3 * 3;
     for (j = tempRow; j < tempRow + 3; ++j) {
@@ -108,12 +108,12 @@ void backtrace(int count) { /*{{{*/
     int col = count % 9;
     if (num[row][col] == 0) {
         for (int i = 1; i <= 9; ++i) {
-            num[row][col] = i;        //赋值
-            if (isPlace(count)) {     //可以放
-                backtrace(count + 1); //进入下一层
+            num[row][col] = i;        // 赋值
+            if (isPlace(count)) {     // 可以放
+                backtrace(count + 1); // 进入下一层
             }
         }
-        num[row][col] = 0; //回溯
+        num[row][col] = 0; // 回溯
     } else {
         backtrace(count + 1);
     }
