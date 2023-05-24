@@ -61,7 +61,7 @@ long long qpow(long long a, long long b) {
 } /*}}}*/
 
 string num[30]  = {"",       "One",    "Two",      "Three",    "Four",    "Five",    "Six",       "Seven",    "Eight",    "Nine",  "Ten",
-                  "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen", "Twenty"};
+                   "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen", "Twenty"};
 string num2[20] = {"", "", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
 string cal(int a) {
     int hundred = a / 100;
