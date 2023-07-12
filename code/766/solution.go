@@ -200,7 +200,7 @@ func main() {
 	fmt.Printf("%d\n", len(x))
 }
 
-//====================int128 package ====================
+// ====================int128 package ====================
 var mod = int64(1152921504606846976)
 
 type int128 struct {
@@ -238,7 +238,7 @@ func (a *int128) mulInt64(v int64) *int128 {
 	return a
 }
 
-//=====================stack package====================
+// =====================stack package====================
 type stack struct {
 	item    []m
 	itemCnt int64
