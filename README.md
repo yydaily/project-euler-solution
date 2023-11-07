@@ -1,5 +1,5 @@
 
-# Project Euler solutions (369 solutions)
+# Project Euler solutions (371 solutions)
 
 
 欧拉计划一些简单题的程序和答案。
@@ -383,3 +383,4 @@ I hope you can understand the principle instead of being a cheater.
 |[840](https://github.com/yydaily/project-euler-solution/tree/master/code/840/README.md)|[c++](https://github.com/yydaily/project-euler-solution/tree/master/code/840/solution.cpp)||||194396971|
 |[844](https://github.com/yydaily/project-euler-solution/tree/master/code/844/README.md)|||[py](https://github.com/yydaily/project-euler-solution/tree/master/code/844/solution.py)||101805206|
 |[845](https://github.com/yydaily/project-euler-solution/tree/master/code/845/README.md)|[c++](https://github.com/yydaily/project-euler-solution/tree/master/code/845/solution.cpp)||||45009328011709400|
+|[860](https://github.com/yydaily/project-euler-solution/tree/master/code/860/README.md)|[c++](https://github.com/yydaily/project-euler-solution/tree/master/code/860/solution.cpp)|[go](https://github.com/yydaily/project-euler-solution/tree/master/code/860/solution.go)|[py](https://github.com/yydaily/project-euler-solution/tree/master/code/860/solution.py)||958666903|
