@@ -7,6 +7,7 @@ cnt_cpp = 0
 cnt_py = 0
 cnt_go = 0
 cnt_pdf = 0
+cnt_java = 0
 
 
 def init_ans():
@@ -23,13 +24,14 @@ def init_ans():
 
 
 def handle(path):
-    global cnt_cpp, cnt_py, cnt_go, cnt_pdf
+    global cnt_cpp, cnt_py, cnt_go, cnt_pdf, cnt_java
     if path not in ans:
         print(path, " has no ans")
         return 1 / 0
     all_file_in_dir = os.listdir("./code/" + path)
     read_me = ""
     cpp = ""
+    java = ""
     go = ""
     py = ""
     pdf = ""
@@ -39,6 +41,9 @@ def handle(path):
         elif f[len(f) - 4 :] == ".cpp":
             cnt_cpp += 1
             cpp = f
+        elif f[len(f) - 5 :] == ".java":
+            cnt_java += 1
+            java = f
         elif f[len(f) - 3 :] == ".go":
             cnt_go += 1
             go = f
@@ -87,6 +92,15 @@ def handle(path):
             + ")"
         )
     content += "|"
+    if len(java) > 0:
+        content += (
+            "[java](https://github.com/yydaily/project-euler-solution/tree/master/code/"
+            + path
+            + "/"
+            + java
+            + ")"
+        )
+    content += "|"
     if len(pdf) > 0:
         content += (
             "[pdf](https://github.com/yydaily/project-euler-solution/tree/master/code/"
@@ -119,8 +133,8 @@ I hope you can understand the principle instead of being a cheater.
 プロジェクトオイラーのプログラムと簡単な質問への回答。
 論理を理解していただければ幸いです，答えを直接コピーする代わりに。
 
-|Problem|c++|go|python|pdf|answer|
-|:------:|:------:|:------:|:------:|:------:|:------:|
+|Problem|c++|go|python|java|pdf|answer|
+|:------:|:------:|:------:|:------:|:------:|:------:|:------:|
 """.format(
                 problem_cnt=problem_cnt
             )
@@ -145,17 +159,16 @@ if __name__ == "__main__":
         handle(str(f))
     print("Problem cnt=" + str(cnt_prob))
     print(
-        "cpp file cnt="
-        + str(cnt_cpp)
-        + " rate="
-        + str(cnt_cpp * 100.0 / cnt_prob)
-        + "%"
+        "cpp file cnt=" + str(cnt_cpp) + " rate=" + str(cnt_cpp * 100.0 / cnt_prob) + "%"
     )
     print(
         "go file cnt=" + str(cnt_go) + " rate=" + str(cnt_go * 100.0 / cnt_prob) + "%"
     )
     print(
         "py file cnt=" + str(cnt_py) + " rate=" + str(cnt_py * 100.0 / cnt_prob) + "%"
+    )
+    print(
+        "java file cnt=" + str(cnt_java) + " rate=" + str(cnt_java * 100.0 / cnt_prob) + "%"
     )
     print(
         "pdf file cnt="
