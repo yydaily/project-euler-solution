@@ -1,0 +1,16 @@
+\sum_{j=1}^N \sum_{i=1}^j gcd(i, j)
+\sum_{u=1}^N u * \sum_{j=1}^{N/u} \sum_{i=1}^j [gcd(i, j)==1]
+\sum_{u=1}^N u * \sum_{j=1}^{N/u} phi(j)
+
+\sum_{j=1}^{N/u} phi(j) 是欧拉函数前缀和
+
+令 S(n) = \sum_{j=1}^{n} phi(n)
+有 S(n) = n*(n+1)/2 - \sum_{i=2}^n S(n/i)
+数论分块可以快速求S(n)
+
+1 * phi(10)= 1 * 32 = 32
+2 * phi(5) = 2 * 10 = 20
+3 * phi(3) = 3 * 4 =  12
+4 * phi(2) = 4 * 2 =  8
+5 * phi(2) = 5 * 2 =  10
+6, 7, 8, 9, 10 * phi(1) = 40
