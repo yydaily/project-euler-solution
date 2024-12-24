@@ -4,3 +4,5 @@ output
 unsolved
 */.vscode/*
 */*/.vscode/*
+cmake*
+.idea
