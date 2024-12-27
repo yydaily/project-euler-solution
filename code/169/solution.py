@@ -18,4 +18,4 @@ def solve(a):
     return ret
 
 
-print(solve(10 ** 25))
+print(solve(10**25))

@@ -10,9 +10,9 @@ def handle(a):
     for i in range(int(a / 2.71828) - 2, int(a / 2.71828) + 2):
         if i < 0 or i >= a:
             continue
-        if a ** (i - ind) * val >= i ** i:
+        if a ** (i - ind) * val >= i**i:
             ind = i
-            val = i ** i
+            val = i**i
     ind //= gcd(a, ind)
     while ind % 2 == 0:
         ind //= 2

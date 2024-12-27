@@ -45,7 +45,7 @@ def gen(a, b):
 
 if __name__ == "__main__":
     index, val, ans = 4, 13, 0
-    upper = 10 ** 15
+    upper = 10**15
     while True:
         print(index, val)
         ans = upper - index + val

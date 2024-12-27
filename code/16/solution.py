@@ -10,4 +10,4 @@ def cal(a):
     return ret
 
 
-print(cal(2 ** 1000))
+print(cal(2**1000))

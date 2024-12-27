@@ -10,16 +10,16 @@ def calc(n):
     r = int(n ** (1 / 3))
     if (r + 1) ** 3 <= n:
         r += 1
-    r = r ** 3
+    r = r**3
     return calc(r - 1) + calc(n - r) + n - r + 1
 
 
 def S(N):
     u = int(N ** (1 / 3))
     for i in range(u):
-        calc(i ** 3)
+        calc(i**3)
     return calc(N - 1)
 
 
 print(S(100))
-print(S(10 ** 17))
+print(S(10**17))

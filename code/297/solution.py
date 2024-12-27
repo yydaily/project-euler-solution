@@ -17,7 +17,7 @@ def cnt(a):
     return 0
 
 
-upper = 10 ** 17
+upper = 10**17
 if __name__ == "__main__":
     a, b = 1, 1
     while b < upper:

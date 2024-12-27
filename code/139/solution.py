@@ -14,7 +14,7 @@ for m in range(2, 10000):
         if gcd(m, n) != 1:
             continue
         C = 2 * m * (m + n)
-        if C > 10 ** 8:
+        if C > 10**8:
             break
         a = m * m - n * n
         b = 2 * m * n
@@ -22,5 +22,5 @@ for m in range(2, 10000):
         s = int(sqrt(c * c - 2 * a * b))
         if c % s != 0:
             continue
-        ans += (10 ** 8) // C
+        ans += (10**8) // C
 print(ans)

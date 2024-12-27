@@ -30,4 +30,4 @@ def S(l, r):
     return ret % mod
 
 
-print(S(1, 10 ** 18))
+print(S(1, 10**18))

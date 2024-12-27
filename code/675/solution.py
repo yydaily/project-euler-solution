@@ -1,8 +1,8 @@
 from random import random
 from math import *
 
-mod = 10 ** 9 + 87
-e7 = 10 ** 7
+mod = 10**9 + 87
+e7 = 10**7
 p = [False] * (e7 + 10)
 l = [0] * (e7 + 10)
 cnt = [0] * (e7 + 10)

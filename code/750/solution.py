@@ -22,7 +22,7 @@ def G(n):
             if i == j:
                 ans[i][j] = 0
                 continue
-            ans[i][j] = 10 ** 9
+            ans[i][j] = 10**9
             for k in range(i, j):
                 ans[i][j] = min(ans[i][j], ans[i][k] + ans[k + 1][j] + dis[k][j])
     return ans[1][n]

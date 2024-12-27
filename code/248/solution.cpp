@@ -6,7 +6,7 @@ int cache[] = {2, 3, 5, 7, 11, 13};
 struct poi {
     int cnt[6];
     long long now;
-    poi(){};
+    poi() {};
     poi(int *a, long long _n) {
         for (int i = 0; i < 6; i++) {
             cnt[i] = a[i];

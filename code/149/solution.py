@@ -1,7 +1,7 @@
 from random import random
 from math import *
 
-mod = 10 ** 6
+mod = 10**6
 nouse = [0] * 4000006
 num = [[0 for i in range(2010)] for j in range(2010)]
 ans = [[[0 for i in range(2010)] for j in range(2010)] for k in range(4)]

@@ -14,4 +14,4 @@ def Q(length):
 
 
 print(Q(8))
-print(Q(10 ** 12))
+print(Q(10**12))

@@ -22,7 +22,7 @@ using namespace std; /*}}}*/
 
 struct p { /*{{{*/
     int num[6];
-    p(){};
+    p() {};
     p(int a) {
         for (int i = 0; i < 6; i++) {
             num[i] = a % 10;

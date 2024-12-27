@@ -21,14 +21,14 @@ def init():
 def cal2(x, a):
     ret = 0
     for i in range(x):
-        ret = add(ret, mul(C[x - 1][a - 1], mul(2 ** i, 2 ** i)))
+        ret = add(ret, mul(C[x - 1][a - 1], mul(2**i, 2**i)))
         for j in range(i):
-            ret = add(ret, mul(mul(2, C[x - 2][a - 2]), mul(2 ** i, 2 ** j)))
+            ret = add(ret, mul(mul(2, C[x - 2][a - 2]), mul(2**i, 2**j)))
     return ret
 
 
 def cal(x, a):
-    return mul(C[x - 1][a - 1], add(2 ** x, -1))
+    return mul(C[x - 1][a - 1], add(2**x, -1))
 
 
 def sum(x, add_cnt, add_val):
@@ -45,13 +45,13 @@ def sum(x, add_cnt, add_val):
 
 if __name__ == "__main__":
     init()
-    upper = int(10 ** 16) + 1
+    upper = int(10**16) + 1
     lower = 0
     cnt = 0
     ans = 0
     while upper != lower:
         diff = 0
-        while upper - lower >= (2 ** diff):
+        while upper - lower >= (2**diff):
             diff += 1
         diff -= 1
         ans = add(ans, sum(diff, cnt, lower))

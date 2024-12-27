@@ -50,7 +50,7 @@ if __name__ == "__main__":
     总数 = 1000000
 
     a = p(瑕疵, 总数)
-    b = Decimal(总数 ** 瑕疵)
+    b = Decimal(总数**瑕疵)
 
     getcontext().prec = 10
     print(Decimal(1) - a / b)

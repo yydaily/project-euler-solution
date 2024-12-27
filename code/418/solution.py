@@ -2,7 +2,7 @@ from random import random
 from math import *
 from copy import deepcopy
 
-INF = 10 ** 100
+INF = 10**100
 
 
 def add(a, b):

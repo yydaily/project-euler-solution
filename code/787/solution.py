@@ -6,7 +6,7 @@ mem = {}
 def F(N):
     if N in mem:
         return mem[N]
-    s = N ** 2 // 8
+    s = N**2 // 8
     z = isqrt(N)
     for g in range(3, z + 1, 2):
         s -= F(N // g)
@@ -20,4 +20,4 @@ def H(N):
     return 1 + 2 * F(N)
 
 
-print(H(10 ** 9))
+print(H(10**9))

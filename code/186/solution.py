@@ -2,8 +2,8 @@ from random import random
 from math import *
 
 root = 524287
-mod = 10 ** 6
-e4 = 10 ** 4
+mod = 10**6
+e4 = 10**4
 pre = [0] * mod
 cnt = [0] * mod
 val = [0] * (e4)

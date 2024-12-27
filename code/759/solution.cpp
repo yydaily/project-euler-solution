@@ -29,10 +29,8 @@ long long cal2(long long x, long long a) { /*{{{*/
     }
     return ret;
 } /*}}}*/
-long long cal(long long x, long long a) { /*{{{*/
-    return mul(C[x - 1][a - 1], add(1LL << x, -1));
-} /*}}}*/
-long long Sum(long long x, long long add_cnt, long long add_val) { /*{{{*/
+long long cal(long long x, long long a) { /*{{{*/ return mul(C[x - 1][a - 1], add(1LL << x, -1)); } /*}}}*/
+long long Sum(long long x, long long add_cnt, long long add_val) {                                  /*{{{*/
     long long ans = mul(add_cnt, add_val);
     ans           = mul(ans, ans);
     for (long long i = 1; i <= x; i++) {

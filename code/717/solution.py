@@ -38,5 +38,5 @@ def G(n):
 
 
 print(G(100))
-print(G(10 ** 4))
-print(G(10 ** 7))
+print(G(10**4))
+print(G(10**7))
