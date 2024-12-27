@@ -3,7 +3,7 @@ def a(i):
 
 
 def F(limit):
-    k = int(limit ** 0.5)
+    k = int(limit**0.5)
     results = set()
     for i in range(1, k + 1):
         c = a(i)
@@ -16,4 +16,4 @@ def F(limit):
     return len(results)
 
 
-print(F(10 ** 14))
+print(F(10**14))

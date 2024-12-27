@@ -22,10 +22,8 @@ long long qpow(long long a, long long b) { /*{{{*/
     return ret;
 } /*}}}*/
 const long long upper = 1e18;
-long long check(long long a, long long ind) { /*{{{*/
-    return ind % (a * 2) >= a ? 1 : 0;
-} /*}}}*/
-long long cal0(long long a, long long u) { // 0..u 里面有多少个数 & a == 0{{{
+long long check(long long a, long long ind) { /*{{{*/ return ind % (a * 2) >= a ? 1 : 0; } /*}}}*/
+long long cal0(long long a, long long u) {                                                 // 0..u 里面有多少个数 & a == 0{{{
     u++;
     auto ans1 = u / (a * 2) * a;
     auto ans2 = min(a, u % (a * 2));

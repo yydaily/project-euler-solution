@@ -1,7 +1,7 @@
 from random import random
 from math import *
 
-mod = 10 ** 9 + 7
+mod = 10**9 + 7
 
 
 def qpow(a, b):
@@ -14,7 +14,7 @@ def qpow(a, b):
     return ret
 
 
-upper = 10 ** 7 + 10 ** 6
+upper = 10**7 + 10**6
 fac, inv = [0] * upper, [0] * upper
 
 

@@ -11,10 +11,10 @@ def cal(a):
             return ret
 
 
-for i in range(10 ** 6 + 1, 10 ** 7, 2):
+for i in range(10**6 + 1, 10**7, 2):
     if i % 10 == 5:
         continue
     v = cal(i)
     print(i, v)
-    if v >= 10 ** 6:
+    if v >= 10**6:
         break

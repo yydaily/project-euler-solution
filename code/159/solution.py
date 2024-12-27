@@ -1,7 +1,7 @@
 from random import random
 from math import *
 
-ans = [0] * (10 ** 6)
+ans = [0] * (10**6)
 
 
 def cal(a):
@@ -13,5 +13,5 @@ def cal(a):
     return ret
 
 
-ans = sum(cal(i) for i in range(2, 10 ** 6))
+ans = sum(cal(i) for i in range(2, 10**6))
 print(ans)

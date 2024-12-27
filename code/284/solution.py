@@ -37,8 +37,8 @@ l = 10000
 base = 14  # if base is 10, set this field to 10
 a = 2
 b = base // a
-al = a ** l
-bl = b ** l
+al = a**l
+bl = b**l
 
 t0 = qpow(bl, al // a * (a - 1) - 1, al)
 t1 = qpow(al, bl // b * (b - 1) - 1, bl)

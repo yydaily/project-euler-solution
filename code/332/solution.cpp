@@ -22,7 +22,7 @@ long long _mod     = e9 + 7;
 using namespace std; /*}}}*/
 struct point {
     int x, y, z;
-    point(){};
+    point() {};
     point(int _x, int _y, int _z) {
         x = _x;
         y = _y;

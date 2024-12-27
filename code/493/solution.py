@@ -18,7 +18,7 @@ def get_cnt(a):
 cases = 0
 color = 0
 num = [0] * 10
-upper = 11 ** 7
+upper = 11**7
 for i in range(1, upper):
     buf = i
     total = 0

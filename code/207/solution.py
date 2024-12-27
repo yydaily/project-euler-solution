@@ -2,7 +2,7 @@ from random import random
 from math import *
 
 a, b = 0, 0
-for k in range(3, 10 ** 9, 2):
+for k in range(3, 10**9, 2):
     b += 1
     now = k + 1
     while (now & 1) == 0:

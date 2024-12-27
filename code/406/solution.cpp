@@ -28,8 +28,8 @@ typedef struct p {
     int cnt_a;
     int cnt_b;
     long double dis;
-    p(){};
-    p(int cnt_a_, int cnt_b_, long double dis_) : cnt_a(cnt_a_), cnt_b(cnt_b_), dis(dis_){};
+    p() {};
+    p(int cnt_a_, int cnt_b_, long double dis_) : cnt_a(cnt_a_), cnt_b(cnt_b_), dis(dis_) {};
 } poi;
 bool cmp(const poi &a, const poi &b) { return a.dis < b.dis; }
 long double C(long long length) {

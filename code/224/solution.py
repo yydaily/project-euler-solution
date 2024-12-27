@@ -4,7 +4,7 @@ sys.setrecursionlimit(5000)
 from random import random
 from math import *
 
-upper = 75 * 10 ** 6
+upper = 75 * 10**6
 ans = 0
 vis = {}
 

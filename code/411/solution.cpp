@@ -10,7 +10,7 @@ struct poi { /*{{{*/
         return y < b.y;
     }
     bool operator==(const poi &b) const { return x == b.x && y == b.y; }
-    poi(){};
+    poi() {};
     poi(long long _x, long long _y) {
         x = _x;
         y = _y;

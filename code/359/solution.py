@@ -53,4 +53,4 @@ def ans(a, b):
     return rans
 
 
-print(ans(27, 12) % (10 ** 8))
+print(ans(27, 12) % (10**8))

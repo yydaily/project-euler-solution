@@ -43,5 +43,5 @@ def solve(N, M):
 
 
 print(solve(10, 10))
-print(solve(10 ** 4, 10 ** 3))
-print(solve(10 ** 12, 10 ** 6))
+print(solve(10**4, 10**3))
+print(solve(10**12, 10**6))

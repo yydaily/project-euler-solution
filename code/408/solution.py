@@ -2,10 +2,10 @@
 from random import random
 from math import *
 
-mod = 10 ** 9 + 7
+mod = 10**9 + 7
 
-fac = [0] * (2 * 10 ** 7 + 1)
-fac_inv = [0] * (2 * 10 ** 7 + 1)
+fac = [0] * (2 * 10**7 + 1)
+fac_inv = [0] * (2 * 10**7 + 1)
 
 
 def pow(x, y):
@@ -30,10 +30,10 @@ def gcd(a, b):
 
 def init():
     fac[0] = 1
-    for i in range(1, 2 * 10 ** 7 + 1):
+    for i in range(1, 2 * 10**7 + 1):
         fac[i] = fac[i - 1] * i % mod
-    fac_inv[2 * 10 ** 7] = pow(fac[2 * 10 ** 7], mod - 2)
-    for i in range(2 * 10 ** 7 - 1, -1, -1):
+    fac_inv[2 * 10**7] = pow(fac[2 * 10**7], mod - 2)
+    for i in range(2 * 10**7 - 1, -1, -1):
         fac_inv[i] = fac_inv[i + 1] * (i + 1) % mod
 
 
@@ -88,4 +88,4 @@ if __name__ == "__main__":
     print(P(5))
     print(P(16))
     print(P(1000))
-    print(P(10 ** 7))
+    print(P(10**7))

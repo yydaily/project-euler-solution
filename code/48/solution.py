@@ -1,13 +1,13 @@
 from random import random
 from math import *
 
-mod = 10 ** 10
+mod = 10**10
 
 
 def cal(a):
     ret = 0
     for i in range(1, a + 1):
-        ret += (i ** i) % mod
+        ret += (i**i) % mod
     return ret % mod
 
 

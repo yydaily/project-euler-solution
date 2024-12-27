@@ -1,7 +1,7 @@
 from random import random
 from math import *
 
-upper = 5 * 10 ** 7
+upper = 5 * 10**7
 v = [2 * n * n + 2 * n + 1 for n in range(upper + 1)]
 
 ans = 0

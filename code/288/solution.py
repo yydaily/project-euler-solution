@@ -2,8 +2,8 @@ from random import random
 from math import *
 
 n = 61
-upper = 10 ** 7
-mod = 61 ** 10
+upper = 10**7
+mod = 61**10
 s = [0] * (upper + 1)
 pown = [0] * (upper + 1)
 

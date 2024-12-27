@@ -28,7 +28,7 @@ def resolve(n):
     return ret
 
 
-mod = 10 ** 9 + 7
+mod = 10**9 + 7
 
 
 def qpow2(n):
@@ -49,6 +49,6 @@ def value(List):
     return ret % mod
 
 
-n = (8 ** 12) * (12 ** 8)
+n = (8**12) * (12**8)
 index_list = resolve(n)
 print(value(index_list))

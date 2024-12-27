@@ -79,7 +79,7 @@ void split(const std::string &s, std::vector<std::string> &sv, const char *delim
     std::copy(s.begin(), s.end(), buffer); // 3.
     char *p = std::strtok(buffer, delim);  // 4.
     do {
-        sv.push_back(p);                      // 5.
+        sv.push_back(p); // 5.
     } while ((p = std::strtok(NULL, delim))); // 6.
     delete[] buffer;
     return;

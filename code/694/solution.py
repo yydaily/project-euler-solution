@@ -72,4 +72,4 @@ if __name__ == "__main__":
     print(Cal(16))
     print(Cal(100))
     print(Cal(10000))
-    print(Cal(10 ** 18))
+    print(Cal(10**18))

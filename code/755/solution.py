@@ -19,4 +19,4 @@ def gao(a, upper):
     return ret
 
 
-print(gao(62, int(10 ** 13)))
+print(gao(62, int(10**13)))

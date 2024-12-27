@@ -52,7 +52,7 @@ def cal(n, x):
 
 if __name__ == "__main__":
     ans = 0
-    n = 10 ** 15
+    n = 10**15
     for i in range(0, 101):
         ans = add(ans, cal(n, i))
     print(ans)

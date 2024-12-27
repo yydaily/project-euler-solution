@@ -13,7 +13,7 @@ def qpow(a, b):
 
 
 num = [0] * 300
-mod = 10 ** 16
+mod = 10**16
 
 num[0] = 1
 for i in range(1, 250251):

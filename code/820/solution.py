@@ -7,4 +7,4 @@ def S(a):
 
 print(S(7))
 print(S(100))
-print(S(10 ** 7))
+print(S(10**7))

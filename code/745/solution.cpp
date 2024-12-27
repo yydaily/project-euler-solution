@@ -68,10 +68,8 @@ long long qpow(long long a, long long b) {
 long long upper = 100;
 map<long long, long long> m;
 vector<long long> base;
-bool cmp(long long a, long long b) { /*{{{*/
-    return abs(a) < abs(b);
-} /*}}}*/
-void dfs(__int128 b = 1, int ind = 0) { /*{{{*/
+bool cmp(long long a, long long b) { /*{{{*/ return abs(a) < abs(b); } /*}}}*/
+void dfs(__int128 b = 1, int ind = 0) {                                /*{{{*/
     for (int i = ind; i < Prime::prime.size(); i++) {
         __int128 buf = b * Prime::prime[i] * Prime::prime[i];
         if (b < 0)

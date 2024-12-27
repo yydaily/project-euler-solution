@@ -3,7 +3,7 @@ from math import *
 
 mod = 982451653
 query = int(1e14)
-upper = int(15 * (10 ** 6))
+upper = int(15 * (10**6))
 fac = [0] * (upper + 10)
 inv = [0] * (upper + 10)
 

@@ -2,10 +2,10 @@
 from random import random
 from math import *
 
-mod = 10 ** 9 + 7
+mod = 10**9 + 7
 
-fac = [0] * (111 * 10 ** 6 + 100)
-fac_inv = [0] * (111 * 10 ** 6 + 100)
+fac = [0] * (111 * 10**6 + 100)
+fac_inv = [0] * (111 * 10**6 + 100)
 
 
 def mypow(x, n):
@@ -62,4 +62,4 @@ if __name__ == "__main__":
     init()
     print(W(2, 2, 4))
     print(W(4, 4, 44))
-    print(W(10 ** 6, 10 ** 7, 10 ** 8))
+    print(W(10**6, 10**7, 10**8))
