@@ -1,4 +1,5 @@
 #include <vector>
+#include <cassert>
 #include <map>
 namespace Prime {
 	std::vector<bool> p;
@@ -6,12 +7,9 @@ namespace Prime {
 	std::vector<int> min_prime;
 	std::vector<int> prime;
 	std::map<int, int> prime_index; // index[2] = 1, index[3] = 2, index[5] = 3, index[7] = 4
-	bool inited = false;
 	int upper;
 	void init(int _upper) {/*{{{*/
-		if(inited) return ;
 		upper = _upper;
-		inited = true;
 		p = std::vector<bool>(_upper, true);
 		max_prime = std::vector<int>(_upper, 0);
 		min_prime = std::vector<int>(_upper, 0);
