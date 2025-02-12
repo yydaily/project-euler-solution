@@ -1,3 +1,4 @@
+#include<cassert>
 namespace ChinaReminder {
 	long long num = 0;
 	long long m[10], a[10];
