@@ -1,4 +1,5 @@
 #include<iostream>
+#include<cassert>
 #include<math.h>
 #include<vector>
 using namespace std;
@@ -278,7 +279,7 @@ namespace QDE { // QDE : Quadratic Diophantine Equations
 }
 
 int main() {
-	auto s = QDE::Solver(1, 5, 4, 0, 0, 0);
+	auto s = QDE::Solver(2, 0, -1, -2, 0, 1);
 	for(auto i : s.solve()) {
 		i.show();
 		assert(s.check(i));
