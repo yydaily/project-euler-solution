@@ -1,66 +1,53 @@
-#include "../template/bigint.cpp"
-#include "../template/china_reminder.cpp"
-#include "../template/euler.cpp"
-#include "../template/pell.cpp"
-#include "../template/prime.cpp"
-#include "../template/prime_cnt.cpp"
-#include <iostream>/*{{{*/
-#include <map>
-#include <math.h>
-#include <set>
-#include <vector>
-const long long e2 = 100;
-const long long e3 = e2 * 10;
-const long long e4 = e3 * 10;
-const long long e5 = e4 * 10;
-const long long e6 = e4 * e2;
-const long long e7 = e6 * 10;
-const long long e8 = e7 * 10;
-const long long e9 = e8 * 10;
-long long _mod     = e9 + 7;
-using namespace std; /*}}}*/
+#include <iostream>
+using namespace std;
+long long ans = 0;
+int d[20];
+void check_and_sum() {
+    int x0 = d[0], x1 = d[1], x2 = d[2], x3 = d[3];
+    int x4 = d[4], x5 = d[5], x6 = d[6], x8 = d[7];
+    int x10 = d[8];
 
-int num[4][4];
-int main() {
-    long long cnt = 0;
-    for (int i = 0; i < e9; i++) {
-        int c = i;
-        for (int x = 0; x < 3; x++)
-            for (int y = 0; y < 3; y++) {
-                num[x][y] = c % 10;
-                c /= 10;
-            }
-        int maxm = 0, minm = 40;
-        for (int x = 0; x < 3; x++) {
-            int now = 0;
-            for (int y = 0; y < 3; y++)
-                now += num[x][y];
-            maxm = max(maxm, now);
-            minm = min(minm, now);
-            now  = 0;
-            for (int y = 0; y < 3; y++)
-                now += num[y][x];
-            maxm = max(maxm, now);
-            minm = min(minm, now);
-        }
-        if (minm + 9 < maxm)
-            continue;
-        for (int sum = maxm; sum <= minm + 9; sum++) {
-            for (int x = 0; x < 3; x++) {
-                num[x][3] = sum - num[x][0] - num[x][1] - num[x][2];
-                num[3][x] = sum - num[0][x] - num[1][x] - num[2][x];
-            }
-            num[3][3] = sum - num[0][3] - num[1][3] - num[2][3];
-            if (num[3][3] < 0 || num[3][3] > 9)
-                continue;
-            if (num[0][0] + num[1][1] + num[2][2] + num[3][3] != sum)
-                continue;
-            num[3][3] = sum - num[0][3] - num[1][3] - num[2][3];
-            if (num[0][3] + num[1][2] + num[2][1] + num[3][0] != sum)
-                continue;
-            cnt++;
-        }
+    int sum = x0 + x1 + x2 + x3;
+    int x7  = sum - x4 - x5 - x6;
+    if (x7 < 0 || x7 > 9)
+        return;
+    int x12 = sum - x0 - x4 - x8;
+    if (x12 < 0 || x12 > 9)
+        return;
+    int x14 = sum - x2 - x6 - x10;
+    if (x14 < 0 || x14 > 9)
+        return;
+    int x15 = sum - x0 - x5 - x10;
+    if (x15 < 0 || x15 > 9)
+        return;
+    int x11 = sum - x3 - x7 - x15;
+    if (x11 < 0 || x11 > 9)
+        return;
+    int x9 = sum - x3 - x6 - x12;
+    if (x9 < 0 || x9 > 9)
+        return;
+    int x13 = sum - x1 - x5 - x9;
+    if (x13 < 0 || x13 > 9)
+        return;
+    if (x12 + x13 + x14 + x15 != sum)
+        return;
+    if (x8 + x9 + x10 + x11 != sum)
+        return;
+    ans++;
+}
+void dfs(int index = 0) {
+    if (index == 9) {
+        check_and_sum();
+        return;
     }
-    cout << cnt << endl;
+
+    for (int i = 0; i < 10; i++) {
+        d[index] = i;
+        dfs(index + 1);
+    }
+}
+int main() {
+    dfs();
+    cout << ans << endl;
     return 0;
 }

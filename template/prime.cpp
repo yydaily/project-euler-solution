@@ -1,5 +1,6 @@
 #include <vector>
 #include <cassert>
+#include <limits>
 #include <map>
 namespace Prime {
 	std::vector<bool> p;
@@ -109,8 +110,8 @@ namespace Prime {
 		return true;
 	}/*}}}*/
 
-	std::map<int, int> factor(long long a) {
-		std::map<int, int> ret;
+	std::map<long long, int> factor(long long a) {
+		std::map<long long, int> ret;
 		while(a!=1) {
 			auto p = MinPrime(a);
 			a/=p;
@@ -123,15 +124,18 @@ namespace Prime {
 		return ret;
 	}
 
-	std::vector<int> all_factor(long long a, bool with_sort=false) {
+	std::vector<long long> all_factor(long long a, long long upper = std::numeric_limits<long long>::max(), bool with_sort=false) {
 		auto m = factor(a);
-		std::vector<int> ret(1, 1);
+		std::vector<long long> ret(1, 1);
 		for(auto i : m) {
 			long long l = ret.size();
 			long long base = 1;
 			for(int j = 1;j<=i.second;j++) {
 				base *= i.first;
-				for(int k = 0;k<l;k++) ret.push_back(ret[k] * base);
+				for(int k = 0;k<l;k++) {
+                    if(ret[k] * base > upper) continue;
+                    ret.push_back(ret[k] * base);
+                }
 			}
 		}
 		if(with_sort) sort(ret.begin(), ret.end());

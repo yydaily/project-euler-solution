@@ -6,6 +6,9 @@ namespace FacInv {
 	long long _mod = 1e9+7;
 
 	long long pow(long long a, long long b, long long mod) {
+        if(b < 0) {
+            return pow(pow(a, -b, mod), mod-2, mod);
+        }
 		long long ret = 1;
 		while(b) {
 			if(b&1) ret = ret*a % mod;

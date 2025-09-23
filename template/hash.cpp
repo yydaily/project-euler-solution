@@ -73,6 +73,14 @@ namespace Hasher {
             }
             return ret;
         }
+        template<typename T, typename = std::enable_if_t<std::is_same_v<T, int> || std::is_same_v<T, ll>>>
+        hashResult gen(const std::vector<T> &a, const std::vector<T> &b) {
+            hashResult ret(mod.size());
+            for(auto i : a) {
+                ret = merge(ret, gen(i));
+            }
+            return ret;
+        }
 
     public:
         template <typename T>
