@@ -5,4 +5,6 @@ unsolved
 */.vscode/*
 */*/.vscode/*
 cmake*
+.DS_Store
+.clang-format
 .idea
